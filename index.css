@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border:  1px solid green; */
+}
+.App{
+    margin: 15%;
+
+    height: 144vh;
+    /* width: 80%; */
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    /* background: #706e6e; */
+}
+.content{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    grid-template-rows: repeat(6, 16%);
+    height: 100vw;
+    width: 100vh;
+    gap: 10px;
+    grid-template-areas:
+        'b b a a a'
+        'b b c c c'
+        'b b d d d'
+        'b b d d d'
+        'b b e e e'
+        'b b f f f';
+}
+.content div{
+    background-color: antiquewhite;
+    /* background: #000; */
+    /* height: 30vh; */
+}
+.header{
+       grid-area: a;                      
+    }
+.sidebar{
+    grid-area: b;
+background-color: aqua;
+}
+.objective{
+    grid-area: c;
+}
+.academic{
+    grid-area: d;
+}
+.certificates{
+    grid-area: e;
+}
+.projects{
+    grid-area: f;
+}
