@@ -4,22 +4,27 @@
     /* border:  1px solid green; */
 }
 .App{
-    margin: 15%;
-
-    height: 144vh;
+    /* margin: 15%; */
+    position: relative;
+    top: 15%;
+    left:15%;
+    width: 50%;
+    margin: 40px;
     /* width: 80%; */
 
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     /* background: #706e6e; */
 }
 .content{
-    padding: 40px;
+    border: 2px solid black;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
+    /* background: #000; */
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 19%);
-    grid-template-rows: repeat(6, 16%);
-    height: 100vw;
+    grid-template-columns: repeat(5,19.0%);
+    grid-template-rows: repeat(6, 16.0%);
+    height: 80vw;
     width: 100vh;
-    gap: 10px;
+    gap: 9px;
     grid-template-areas:
         'b b a a a'
         'b b c c c'
