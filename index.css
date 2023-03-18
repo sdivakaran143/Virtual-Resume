@@ -1,59 +1,180 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* border:  1px solid green; */
 }
+.main_body{
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
 .App{
-    /* margin: 15%; */
-    position: relative;
-    top: 15%;
-    left:15%;
-    width: 50%;
-    margin: 40px;
-    /* width: 80%; */
-
-    /* background: #706e6e; */
+  /* background: #00000049; */
+  padding: 5px;
+  /* border: 2px solid black; */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  width: 730px;
+  /* width: 20%; */
 }
 .content{
-    border: 2px solid black;
-    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
     /* background: #000; */
-    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(5,19.0%);
-    grid-template-rows: repeat(6, 16.0%);
-    height: 80vw;
-    width: 100vh;
-    gap: 9px;
+    /* width: 730px; */
+
+    grid-template-columns: repeat(5,140px);
+    grid-template-rows: repeat(6,160px);
+    gap: 7px;
     grid-template-areas:
         'b b a a a'
         'b b c c c'
         'b b d d d'
         'b b d d d'
         'b b e e e'
-        'b b f f f';
+        'b b e e e';
 }
-.content div{
-    background-color: antiquewhite;
-    /* background: #000; */
-    /* height: 30vh; */
+.App p{
+padding:8px;
+text-align: justify;
 }
 .header{
-       grid-area: a;                      
-    }
+    grid-area: a;                      
+}
 .sidebar{
     grid-area: b;
-background-color: aqua;
+    background-color: red;
+    /* border-radius: 6px; */
+    color: aliceblue;
 }
 .objective{
+    /* border-top: 2px solid red; */
     grid-area: c;
 }
 .academic{
+    /* border-top: 2px solid red; */
     grid-area: d;
 }
 .certificates{
+    /* border-top: 2px solid red; */
     grid-area: e;
 }
-.projects{
-    grid-area: f;
+
+
+/* --------------------------------------------------------- */
+.header h1{
+    padding: 10px 20px 0px 0px;
+    /* background: #ce9b9   b6b !important; */
+    position: relative;
+    top: 10%;
+    /* width: 100%; */
+    direction: rtl;
+}
+.objective p{
+    text-align: center;
+    position:relative;
+    top:10%;
+}
+h3{
+    text-indent: 10px;
+    border-bottom: 2px solid red;
+    letter-spacing: 4px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px 5px 0px;
+}
+.sidebar h3{
+    border-bottom:2px solid white ;
+    /* background: #000; */
+}
+.header p{
+    /* background: #000; */
+    margin: 5px 10px 0px 0px;
+    text-align: end;
+}
+.academic span{
+    padding: -10px;
+    font-weight: 600;
+}
+.academic div{
+    /* background-color: coral; */
+    margin: 2px;
+    padding: 5px;
+}
+.certificates li{
+    padding: 5px 10px;
+
+}
+ul{
+    list-style-position:inside;
+}
+.projects dl{
+    text-align: justify;
+
+    padding:0px 20px 20px 20px;
+}
+.projects dt{
+    font-weight: 600;   
+    padding-top: 20px ; 
+}
+.projects dd{
+    text-indent: 20px;
+    padding: 5px;
+}
+
+.sidebar ul{
+    padding: 10px;
+    list-style: none;
+    /* list-style-position:outside; */
+}
+.sidebar{
+    line-height: 25px;
+}
+.sidebar div{
+    padding-top: 40px;
+}
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.icons h3{
+    margin: 30px 0px 20px 0px;
+}
+.projecttitle{
+    padding: 40px 0px 0px 0px;
+}
+@media (max-width:700px) {
+    body{
+        font-size: 6px;
+        line-height: 8px;
+        /* background: #000; */
+    }
+    .App{
+         width: 320px;
+         top:400px;
+    }
+    .content{
+        grid-template-columns: repeat(5,60px);
+        grid-template-rows: repeat(6,80px);
+
+    }
+    .sidebar{
+        line-height: 12px;
+    }
+    .sidebar div{
+        padding: 5px;
+    }
+   .icons h3{
+    margin: 10px 0px 5px 0px;
+    } 
+    .projects dl{
+        padding: 5px;
+    }
+    .projects dt{
+        padding-top: 5px ; 
+    }
+    .projects dd{
+        padding: 5px;
+    }
 }
