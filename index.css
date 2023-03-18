@@ -144,6 +144,13 @@ ul{
 .projecttitle{
     padding: 40px 0px 0px 0px;
 }
+#dnlrdbtn{
+    padding: 10px 20px 10px 20px  ;
+    margin: 20px;
+    border: none;color: white;
+    font-variant: small-caps;
+    background: linear-gradient(to right,red , rgb(169, 1, 1));
+}
 @media (max-width:700px) {
     body{
         font-size: 6px;
