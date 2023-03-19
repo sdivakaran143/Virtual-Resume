@@ -28,7 +28,7 @@
     gap: 7px;
     grid-template-areas:
         'b b a a a'
-        'b b c c c'
+        'b b a a a'
         'b b d d d'
         'b b d d d'
         'b b e e e'
@@ -75,10 +75,11 @@ text-align: justify;
     /* width: 100%; */
     direction: rtl;
 }
-.objective p{
+.objective{
+    /* display: inline; */
+    position: relative;
+    top: 10%;
     text-align: center;
-    position:relative;
-    top:10%;
 }
 h3{
     text-indent: 10px;
@@ -93,9 +94,13 @@ h3{
 }
 .header p{
     /* background: #000; */
-    margin: 5px 10px 0px 0px;
+    margin: 25px 15px 0px 0px;
     text-align: end;
 }
+.objective p{
+    text-align: center;
+}
+
 .academic span{
     padding: -10px;
     font-weight: 600;
