@@ -48,6 +48,7 @@ text-align: justify;
 .sidebar{
     grid-area: b;
     background-color: red;
+    /* background: gray; */
     border-radius: 6px;
     color: aliceblue;
 }
@@ -78,7 +79,7 @@ text-align: justify;
 .objective{
     /* display: inline; */
     position: relative;
-    top: 10%;
+    top: 18%;
     /* text-align: center; */
 }
 h3{
@@ -208,4 +209,14 @@ ul{
     .projects dd{
         padding: 5px;
     }
+    .projecttitle{
+        padding: 0px 0px 0px 0px;
+    }
+    .academic p{
+        padding: 3px;
+    }
+    .objective p{
+        margin-top: 0;
+    }
+
 }
