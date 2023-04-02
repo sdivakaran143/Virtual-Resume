@@ -163,7 +163,7 @@ ul{
     margin: 20px;
     border: none;
     font-variant: small-caps;
-    background: linear-gradient(to right,blue , rgb(169, 1, 1));
+    background: linear-gradient(to right, #00BFFF , rgb(169, 1, 1));
 }
 #dnlrdbtn a{
     text-decoration: none;color: white;
