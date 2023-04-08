@@ -176,6 +176,27 @@ ul{
     padding: 0px 0px 0px 20px;
 
 }
+.emailid::before{
+    content: " ---------------------------------------------------------------------------";
+    margin: 10px;
+    font-size: 10px;
+    background: #00BFFF;
+}
+.emailid{
+    position: fixed;
+    transform: rotate(90deg);
+    color:  #00BFFF;
+    top: 50%;
+    right: -20%;
+    font-weight: bolder;
+    opacity: 70%;
+}
+.emailid::after{
+    content: " ---------------------------------------------------------------------------";
+    margin: 10px;
+    font-size: 10px;
+    background: #00BFFF;
+}
 @media (max-width:700px) {
     body{
         font-size: 6px;
