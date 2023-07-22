@@ -52,7 +52,7 @@ text-align: justify;
     grid-area: b;
     background-color: #00BFFF;
     /* background: gray; */
-    border-radius: 6px;
+    /* border-radius: 6px; */
     color: aliceblue;
 }
 .objective{
@@ -135,7 +135,7 @@ ul{
     padding-top: 20px ; 
 }
 .projects dd{
-    text-indent: 20px;
+    /* text-indent: 20px; */
     padding: 5px;
 }
 
@@ -260,6 +260,4 @@ ul{
         margin-top: 40px;
         /* text-align: end; */
     }
-
-
 }
